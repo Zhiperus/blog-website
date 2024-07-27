@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs")%>
+
+<% if(locals.blog) {%>
+    <div class="grid-item" id="blog-title" >
+        <h1 class="roboto-condensed-text"><%= blog.title%></h1>
+    </div>
+    <div class="grid-item" id="blog-content">
+        <h2  style="white-space: pre-wrap" class="rubik-text"><%= blog.content%></h2>
+    </div>
+<% } %>
+
+<%- include("partials/footer.ejs")%>
