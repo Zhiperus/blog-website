@@ -7,6 +7,15 @@
     <div class="grid-item" id="blog-content">
         <h2  style="white-space: pre-wrap" class="rubik-text"><%= blog.content%></h2>
     </div>
+    <div>
+        <form class="grid-item" method="post" action="/edit/blog/<%= id%>">
+            <input id="edit-button" type="submit" value="Edit">
+        </form>
+        <form class="grid-item" id="delete-form" method="post">
+            <button class="delete-button" type="submit" formaction="/blog/<%= id%>">Delete</button>
+        </form>
+    </div>
+    
 <% } %>
 
 <%- include("partials/footer.ejs")%>

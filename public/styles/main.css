@@ -11,7 +11,7 @@
 .grid-container {
    display: grid;
    grid-template-columns: 1000px;
-   grid-template-rows: 50px 2fr;
+   grid-template-rows: 50px 2fr 2fr 10px;
    grid-auto-flow: column;
    gap: 75px 0px;
    padding-top: 75px;
@@ -36,11 +36,36 @@
 #blog-content {
    background-color: #405D72;
    border-radius: 50px;
-   height: 300px;
+   height: fit-content;
    font-size: small;
    text-align: justify;
    text-indent: 30px;
-   padding: 20px;
+   padding: 50px;
+}
+
+#edit-button {
+   background-color: #008CBA; 
+   border-radius: 50px;
+   border: solid #008CBA;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   font-size: 16px;
+   justify-self: center;
+   align-self: center;
+ }
+
+.delete-button {
+   display: none;
+   background-color: red;
+   border-radius: 50px;
+   border: solid red;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
 }
 
 #input-title {
@@ -55,7 +80,7 @@
   padding: 10px;
   max-width: 100%;
   line-height: 1.5;
-  height: 50px;
+  height: 200px;
   border-radius: 5px;
   border: 1px;
   box-shadow: 1px 1px 1px #999;
@@ -81,7 +106,6 @@ nav {
     width: 90px;
     overflow: hidden;
     transition: width 0.2s linear;
-    /* box-shadow: 0 20px 35px rgba(); */
 }
 
 #create-button {
@@ -115,6 +139,8 @@ nav {
    font-family: "Montserrat", sans-serif;
 }
 
+
+
 .montserrat-text {
    font-family: "Montserrat", sans-serif;
    font-optical-sizing: auto;
@@ -142,6 +168,9 @@ nav:hover{
    .blog {
       width: 240px;
       transition: all 0.5s ease;
+   }
+   .delete-button {
+      display: inline-block;
    }
 }
 

@@ -1,10 +1,12 @@
+/*Floating Cubes Code: https://www.divinectorweb.com/2023/05/animated-background-using-pure-css.html */
+
 .wrapper span {
 	position: fixed;
 	bottom: -180px;
 	height: 50px;
 	width: 50px;
 	z-index: -1;
-	background-color: #18191f;
+	background-color: #405D72;
 	box-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
 	animation: animate 10s linear infinite;
 }
